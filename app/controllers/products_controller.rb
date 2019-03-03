@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
   
   def add 
-    session[:cart] ||= [] << 
+    session[:cart] ||= [] << params[:cart]
     
   end
   
