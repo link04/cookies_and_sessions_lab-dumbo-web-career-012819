@@ -4,7 +4,7 @@
 </ul>
 
 
-<%= form_for 'add' do |f| %>
+<%= form_for 'add', :url => add_path do |f| %>
   <%= f.label :product %>:
   <%= f.text_field :product, id: 'product' %>
   <%= f.submit 'add to cart' %>
