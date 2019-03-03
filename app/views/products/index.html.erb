@@ -5,6 +5,7 @@
 
 
 <%= form_for '/add' do |f| %>
-<%= f.text_field :product %>
-<%= f.submit %>
+  <%= f.label :product %>:
+  <%= f.text_field :product %>
+  <%= f.submit %>
 <% end %>
