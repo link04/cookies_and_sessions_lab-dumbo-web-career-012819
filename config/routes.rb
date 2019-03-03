@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   
   root 'products#index'
-  post 'products#index'
+  post ''=> 'products#index', as: :
   
+    #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
