@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   
   def add 
     session[:cart] ||= [] << params[:product]
-    redirect_to '/'
+    redirect_to index
   end
   
 end
