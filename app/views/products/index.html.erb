@@ -1,8 +1,8 @@
-<% session[:cart].each do |item|%>
+
 <ul>
-  <li><%= item %> </li>
+  <li><%= session[:cart] %> </li>
 </ul>
-<% end%>
+
 
 <%= form_for @item do |f| %>
 <%= f.text_field :name %>
