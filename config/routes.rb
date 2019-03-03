@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   root 'products#index'
-  post ''=> 'products#index', as: :
+  post 'products/add'=> 'products#add', as: :
   
     #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
     
