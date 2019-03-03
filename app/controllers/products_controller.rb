@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   
   def index 
-    @item
+    @item = ''
   end
   
   def add 
