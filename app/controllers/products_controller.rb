@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   end
   
   def add 
+    byebug
     session[:cart] ||= [] << params[:product]
     redirect_to '/'
   end
